@@ -6,56 +6,56 @@ let scores = {};
 
 const princesses = {
   "白雪公主 Snow White": {
-    icon: "🍎",
+    image: "images/snow-white.jpg",
     text: "你溫柔善良，重視陪伴，總是願意照顧身邊的人。"
   },
   "灰姑娘 Cinderella": {
-    icon: "👠",
+    image: "images/cinderella.jpg",
     text: "你相信希望，即使遇到困難，也會努力撐下去。"
   },
   "奧蘿拉 Aurora": {
-    icon: "🌹",
+    image: "images/aurora.jpg",
     text: "你浪漫感性，喜歡安靜、美好又有想像力的生活。"
   },
   "愛麗兒 Ariel": {
-    icon: "🧜‍♀️",
+    image: "images/ariel.jpg",
     text: "你充滿好奇心，勇敢探索未知，也願意追求自己的夢想。"
   },
   "貝兒 Belle": {
-    icon: "📚",
+    image: "images/belle.jpg",
     text: "你聰明獨立，喜歡思考，不會只用外表判斷事情。"
   },
   "茉莉 Jasmine": {
-    icon: "🐯",
+    image: "images/jasmine.jpg",
     text: "你有主見、重視自由，不喜歡被別人的期待限制。"
   },
   "寶嘉康蒂 Pocahontas": {
-    icon: "🍃",
+    image: "images/pocahontas.jpg",
     text: "你重視自然與內心的聲音，常常能做出成熟的判斷。"
   },
   "木蘭 Mulan": {
-    icon: "⚔️",
+    image: "images/mulan.jpg",
     text: "你勇敢、有責任感，願意為重要的人挺身而出。"
   },
   "蒂安娜 Tiana": {
-    icon: "⭐",
+    image: "images/tiana.jpg",
     text: "你務實努力，清楚自己的目標，願意一步一步完成夢想。"
   },
   "樂佩 Rapunzel": {
-    icon: "🎨",
+    image: "images/rapunzel.jpg",
     text: "你樂觀、有創意，對生活充滿熱情與想像力。"
   },
   "梅莉達 Merida": {
-    icon: "🏹",
+    image: "images/merida.jpg",
     text: "你自由直接，不喜歡被控制，勇於選擇自己的道路。"
   },
   "莫娜 Moana": {
-    icon: "🌊",
+    image: "images/moana.jpg",
     text: "你有冒險精神，相信自己，也願意探索更大的世界。"
   },
   "拉雅 Raya": {
-    icon: "🐉",
-    text: "你堅強謹慎，重視信任，也懂得保護重要的人。"
+    image: "images/raya.jpg",
+    text: "你堅強謹慎，重視信任，也懂得保護自己與重要的人。"
   }
 };
 
@@ -167,7 +167,7 @@ function showResult() {
 
   quizBox.innerHTML = `
     <div class="result">
-      <div class="princess-icon">${result.icon}</div>
+      <img class="princess-img" src="${result.image}" alt="${resultPrincess}">
       <h2>你的測驗結果是</h2>
       <h1>${resultPrincess}</h1>
       <p>${result.text}</p>
